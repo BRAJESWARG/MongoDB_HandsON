@@ -1,0 +1,51 @@
+> show dbs
+Inventory  0.000GB
+admin      0.000GB
+config     0.000GB
+jio        0.000GB
+local      0.000GB
+reliance   0.000GB
+> use Human_Resource
+switched to db Human_Resource
+> db.employee.insertOne({firstName: "John", lastName: "Doe", salary: 25000, department: "HR", lastCompany: "X", lastSalary: 10000, overallExp: 2, contactInfo: 1234567890, yearGard: 2016, gradStream: "CSE"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62bdc6bee3f104e2802a6b40")
+}
+> db.employee.insertOne({firstName: "Rohan", lastName: "Jame", salary: 30000, department: "Technical", lastCompany: "Y", lastSalary: 15000, overallExp: 1, contactInfo: 1234567860, yearGard: 2015, gradStream: "CSE"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62bdc74de3f104e2802a6b41")
+}
+> db.employee.insertOne({firstName: "John", lastName: "Doe", salary: 35000, department: "Accounts", lastCompany: "Z", lastSalary: 20000, overallExp: 1, contactInfo: 123567890, yearGard: 2019, gradStream: "ECE"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62bdc83ce3f104e2802a6b42")
+}
+> db.employee.insertOne({firstName: "Sao", lastName: "Avika", salary: 30000, department: "Sales", lastCompany: "Y", lastSalary: 15000, overallExp: 2, contactInfo: 1234567860, yearGard: 2015, gradStream: "CSE"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62bdc8b0e3f104e2802a6b43")
+}
+> db.employee.insertOne({firstName: "Jame", lastName: "Doe", salary: 35000, department: "Accounts", lastCompany: "Z", lastSalary: 20000, overallExp: 1, contactInfo: 123567890, yearGard: 2019, gradStream: "ECE"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62bdc8e6e3f104e2802a6b44")
+}
+> db.employee.insertOne({firstName: "Jame", lastName: "roh", salary: 35000, department: "Accounts", lastCompany: "Z", lastSalary: 15000, overallExp: 2, contactInfo: 123567890, yearGard: 2019, gradStream: "EEE"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62bdc943e3f104e2802a6b45")
+}
+> db.employee.find()
+{ "_id" : ObjectId("62bdc6bee3f104e2802a6b40"), "firstName" : "John", "lastName" : "Doe", "salary" : 25000, "department" : "HR", "lastCompany" : "X", "lastSalary" : 10000, "overallExp" : 2, "contactInfo" : 1234567890, "yearGard" : 2016, "gradStream" : "CSE" }
+{ "_id" : ObjectId("62bdc74de3f104e2802a6b41"), "firstName" : "Rohan", "lastName" : "Jame", "salary" : 30000, "department" : "Technical", "lastCompany" : "Y", "lastSalary" : 15000, "overallExp" : 1, "contactInfo" : 1234567860, "yearGard" : 2015, "gradStream" : "CSE" }
+{ "_id" : ObjectId("62bdc83ce3f104e2802a6b42"), "firstName" : "John", "lastName" : "Doe", "salary" : 35000, "department" : "Accounts", "lastCompany" : "Z", "lastSalary" : 20000, "overallExp" : 1, "contactInfo" : 123567890, "yearGard" : 2019, "gradStream" : "ECE" }
+{ "_id" : ObjectId("62bdc8b0e3f104e2802a6b43"), "firstName" : "Sao", "lastName" : "Avika", "salary" : 30000, "department" : "Sales", "lastCompany" : "Y", "lastSalary" : 15000, "overallExp" : 2, "contactInfo" : 1234567860, "yearGard" : 2015, "gradStream" : "CSE" }
+{ "_id" : ObjectId("62bdc8e6e3f104e2802a6b44"), "firstName" : "Jame", "lastName" : "Doe", "salary" : 35000, "department" : "Accounts", "lastCompany" : "Z", "lastSalary" : 20000, "overallExp" : 1, "contactInfo" : 123567890, "yearGard" : 2019, "gradStream" : "ECE" }
+{ "_id" : ObjectId("62bdc943e3f104e2802a6b45"), "firstName" : "Jame", "lastName" : "roh", "salary" : 35000, "department" : "Accounts", "lastCompany" : "Z", "lastSalary" : 15000, "overallExp" : 2, "contactInfo" : 123567890, "yearGard" : 2019, "gradStream" : "EEE" }
+{ "_id" : ObjectId("62bdc9b8e3f104e2802a6b46"), "firstName" : "Rohan", "lastName" : "Jame", "salary" : 30000, "department" : "Technical", "lastCompany" : "Y", "lastSalary" : 15000, "overallExp" : 1, "contactInfo" : 1234567860, "yearGard" : 2015, "gradStream" : "CSE" }
+{ "_id" : ObjectId("62bdc9d6e3f104e2802a6b47"), "firstName" : "Jame", "lastName" : "Doe", "salary" : 35000, "department" : "Accounts", "lastCompany" : "Z", "lastSalary" : 20000, "overallExp" : 1, "contactInfo" : 123567890, "yearGard" : 2019, "gradStream" : "ECE" }
+{ "_id" : ObjectId("62bdca09e3f104e2802a6b48"), "firstName" : "Sao", "lastName" : "Avika", "salary" : 30000, "department" : "Sales", "lastCompany" : "Y", "lastSalary" : 15000, "overallExp" : 2, "contactInfo" : 1234567860, "yearGard" : 2015, "gradStream" : "CSE" }
+{ "_id" : ObjectId("62bdca34e3f104e2802a6b49"), "firstName" : "Jame", "lastName" : "Doe", "salary" : 35000, "department" : "Accounts", "lastCompany" : "Z", "lastSalary" : 15000, "overallExp" : 2, "contactInfo" : 123567890, "yearGard" : 2019, "gradStream" : "EEE" }
+{ "_id" : ObjectId("62bdca59e3f104e2802a6b4a"), "firstName" : "Rohan", "lastName" : "Jame", "salary" : 30000, "department" : "Technical", "lastCompany" : "Y", "lastSalary" : 15000, "overallExp" : 1, "contactInfo" : 1234567860, "yearGard" : 2015, "gradStream" : "CSE" }
